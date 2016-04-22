@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<button onclick="yarat()">yarat</button>
+<button onclick="sil()">sil</button>
+<div id="yuska"></div>
+<script type="text/javascript">
+var x=0;
+	function yarat(){
+		x++;
+    var mydiv=document.createElement("div");
+    mydiv.setAttribute("class", "crazyDiv");
+    document.getElementById("yuska").appendChild(mydiv);
+    mydiv.innerHTML=x;
+	}
+	function sil(){
+		var dlt=document.getElementById("yuska");
+		dlt.removeChild(dlt.lastChild);
+	}
+</script>
+</body>
+</html>
